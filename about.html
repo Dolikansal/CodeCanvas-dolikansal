@@ -327,30 +327,57 @@
     .mission { animation-delay: 0.4s !important; }
     .values { animation-delay: 0.5s !important; }
     .involve { animation-delay: 0.6s !important; }
+
+    /* Footer styles */
+    footer{
+        background: rgba(15, 0, 30, 0.8);
+        margin-top: 20px;
+    }
+   .footer-first{
+    display: flex;
+    padding: 35px;
+   }
+   .f-left{
+    margin-left: 200px;
+    color: white;
+    font-size: large;
+   }
+   .f-socials{
+    display: flex;
+    gap: 10px;
+    font-size: large;
+   }
+   .f-right{
+    margin-left: 300px;
+    padding: 18px;
+   }
+   .f-right a {
+  color: white;
+  font-size: medium;
+}
+.f-right ul {
+  display: flex;
+  gap : 10px;
+}
+.p-2{
+    margin-left: 30px;
+}
+.f-socials a {
+  color: white;
+}
+.f-container p {
+    margin: 0%;
+  color: white;
+}
+.f-container p:nth-child(2) {
+  margin-top: 5px; 
+}
+.p-1 li, .p-2 li {
+  margin-bottom: 5px;
+}
     </style>
 </head>
 <body>
-    <!-- <header class="header">
-        <div class="container">
-          <div class="header-content">
-            <div class="logo">CodeCanvas</div>
-            <nav class="nav">
-              <a href="index.html#home" class="nav-link">Home</a>
-              <a href="index.html#browser" class="nav-link">Browse</a>
-              <a href="index.html#submit" class="nav-link">Submit</a>
-              <a href="about.html" class="nav-link">About</a>
-              <a href="index.html#reviews" class="nav-link">Reviews</a>
-              <a href="index.html#contact" class="nav-link">Contact Us</a>
-              <a href="https://github.com/Varshitha713/CodeCanvas" class="btn-primary" target="_blank">
-                <i class="fab fa-github"></i> GitHub
-              </a>
-              <button class="theme-toggle" id="darkModeToggle" aria-label="Toggle Theme">
-                <span id="themeIcon">🌙</span>
-              </button>
-            </nav>
-          </div>
-        </div>
-      </header> -->
       <header class="header">
         <div class="container">
             <div class="header-content">
@@ -411,6 +438,40 @@
             <div class="involve">
                 <p>CodeCanvas is more than a platform - it's a community. Contribute your projects, share feedback, or help us improve the platform. Together, we're painting the digital world one beautiful component at a time.</p>
             </div>
+            <!-- footer -->
+            <footer>
+                <div>
+                    <div class="footer-first">
+                        <div class="f-left">
+                            <h2>CodeCanvas</h2>
+                            <ul class="f-socials">
+                                <div><a href="https://github.com/Varshitha713/CodeCanvas" target="_blank"><i class="fa-brands fa-github"></i></a></div>
+                                <div><a href="https://www.linkedin.com/in/varshitha-macha/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></div>
+                                <div><a href="https://discord.com/users/1179807221329182780" target="_blank"><i class="fa-brands fa-discord"></i></a></div>
+                                <div><a href="#"><i class="fa-solid fa-envelope"></i></a></div>
+                          </ul>
+                        </div>
+                        <div class="f-right">
+                            <ul>
+                                <div class="p-1">
+                                  <li><a href="index.html">Home</a></li>
+                                  <li><a href="index.html#browse">Browse</a></li>
+                                  <li><a href="index.html#submit">Submit</a></li>
+                                </div>
+                                <div class="p-2">
+                                  <li><a href="#">About</a></li>
+                                  <li><a href="index.html#reviews">Reviews</a></li>
+                                  <li><a href="index.html#contact">Contact Us</a></li>
+                                </div>
+                              </ul>
+                        </div>
+                    </div>
+                    <div class="f-container">
+                        <p>&copy; 2025 CodeCanvas. Open source project for the developer community.</p>
+                        <p>Built with ❤️ for showcasing amazing front-end projects</p>
+                    </div>
+                </div>
+            </footer>
         </div>
     </div>
     <!-- ending of about us page -->
